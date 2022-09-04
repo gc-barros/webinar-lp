@@ -70,7 +70,7 @@ const SecondSection = () => {
         </div>
       </section>
       <footer className={styles.footer}>
-        Developed with 🧡 by <a href="https://www.barrosdev.com.br/" target="_blank">Gabriel Barros</a>
+        Developed with 🧡 by <a href="https://www.barrosdev.com.br/" target="_blank" rel="noreferrer">Gabriel Barros</a>
       </footer>
     </>
   )

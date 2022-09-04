@@ -9,13 +9,13 @@ const FirstSection = () => {
         <header className={styles.cabecalho}>
           <img className={styles.logo} src="/assets/img/logo.svg" alt="Logo Economiau" />
           <div className={styles.social}>
-            <a href="https://whatsa.me/5598982333797" target="_blank" title="Whatsapp">
+            <a href="https://whatsa.me/5598982333797" target="_blank" title="Whatsapp" rel="noreferrer">
               <img src="/assets/img/icon-wpp.svg" alt="WhatsApp" />
             </a>
-            <a href="https://www.linkedin.com/in/gabrielcbarros/" target="_blank" title="Linkedin">
+            <a href="https://www.linkedin.com/in/gabrielcbarros/" target="_blank" title="Linkedin" rel="noreferrer">
               <img src="/assets/img/icon-in.svg" alt="Linkedin" />
             </a>
-            <a href="https://github.com/gc-barros" target="_blank" title="GitHub">
+            <a href="https://github.com/gc-barros" target="_blank" title="GitHub" rel="noreferrer">
               <img src="/assets/img/icon-git.svg" alt="GitHub" />
             </a>
           </div>
