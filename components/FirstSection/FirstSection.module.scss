@@ -1,0 +1,161 @@
+@import '../../styles/variaveis';
+
+.container {
+  padding: 32px;
+  height: 100vh;
+  background-image: url(/assets/img/blob1.svg), url(/assets/img/blob2.svg);
+  background-repeat: no-repeat;
+  background-position: left -10% top, right -15% bottom;
+
+  @media screen and (max-width: 1023px) {
+    height: auto;
+  }
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 943px;
+  margin: auto;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+  }
+  
+
+  .social {
+    display: flex;
+    gap: 16px;
+
+    img {
+      width: 24px;
+      cursor: pointer;
+
+      &:hover {
+        filter: brightness(0) saturate(100%) invert(77%) sepia(57%) saturate(1826%) hue-rotate(344deg) brightness(103%) contrast(108%);
+      }
+    }
+  }
+}
+
+.principal {
+  height: calc(100vh - 74px);
+  max-width: 943px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1023px) {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  
+  .lottie {
+    max-width: 467px;
+    width: 100%;
+  }
+
+  .intro {
+
+    @media screen and (max-width: 1023px) {
+      margin: 64px 0;
+    }
+    
+    span {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    h1 {
+      margin-top: 8px;
+      max-width: 390px;
+      line-height: 40px;
+    }
+
+    @media screen and (max-width: 480px) {
+      span {
+        font-size: 16px;
+      }
+  
+      h1 {
+        font-size: 24px;
+      }
+  
+    }
+
+    .palestrante {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin: 48px 0;
+
+      .info {
+        font-size: 16px;
+        border-left: 4px solid $primary;
+        padding: 4px 0 4px 10px;
+        line-height: 20px;
+
+        p:first-of-type {
+          font-weight: 700;
+          margin-bottom: 4px;
+        }
+      }
+    }
+
+    h2 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 26px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: url(/assets/img/icon-calendar.svg) no-repeat center / contain;
+      }
+    }
+
+    form {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      input, button {
+        border: 1px solid #949494;
+        border-radius: 40px;
+        height: 40px;
+        padding: 8px 16px;
+        font-size: 14px;
+        outline: 0;
+
+        &::placeholder {
+          color: #949494;
+        }
+      }
+
+      button {
+        border: 0;
+        background-color: $primary;
+        color: $black;
+        font-weight: 700;
+        margin-top: 12px;
+        cursor: pointer;
+        transition: .4s ease;
+
+        &:hover {
+          filter: brightness(1.1);
+        }
+      }
+    }
+  }
+}
